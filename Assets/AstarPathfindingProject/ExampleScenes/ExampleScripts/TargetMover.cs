@@ -64,7 +64,6 @@ namespace Pathfinding {
 			}
 
 			if (positionFound && newPosition != target.position) {
-				print("new position");
 				target.position = newPosition;
 				for (int i = 0; i < ais.Length; i++) {
 					if (ais[i] != null) ais[i].SearchPath();

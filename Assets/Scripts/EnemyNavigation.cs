@@ -6,69 +6,102 @@ using System.Linq;
 namespace Pathfinding {
     public class EnemyNavigation : MonoBehaviour
     {
+        [Header("Dependencies")]
+        public float shootDelay = 1;
         public GameObject spawnObject;
         public GameObject playerObject;
-        public float playerDetectionRange;
+        public float enemyVisionRange;
+        public GameObject visionGizmo;
+        public float enemyHearingRange;
+        public GameObject hearingGizmo;
         public float stoppingDistance;
+        public string[] layerMaskStrings;
 
         [Header("Prefabs")]
-
         public GameObject projectile;
 
         [Header("Debugging")]
         public float distanceFromPlayer = 999;
         public float raycastHitDistance = 999;
-        public bool playerInSight = false;
-        public bool playerInRange = false;
+        public bool seeingPlayer = false;
+        public bool hearingPlayer = false;
         private RaycastHit2D hit;
         private LineRenderer lineRenderer;
         public AIDestinationSetter destinationSetter;
+        public AILerp aiLerp;
 
         void Start()
         {
             lineRenderer = GetComponent<LineRenderer>();
+            //playerObject = GameObject.FindGameObjectWithTag("Player");
+            //spawnObject = GameObject.FindGameObjectWithTag("Spawn");
+            StartCoroutine("ShootCycle");
         }
 
         void Update()
         {
-            isPlayerInSight();
-            isPlayerInRange();
+            visionGizmo.transform.localScale = new Vector3(enemyVisionRange*2, enemyVisionRange*2, enemyVisionRange*2);
+            hearingGizmo.transform.localScale = new Vector3(enemyHearingRange*2, enemyHearingRange*2, enemyHearingRange*2);
+            canSeePlayer();
+            canHearPlayer();
             updateLineRenderer();
-
-            distanceFromPlayer = Vector3.Distance(transform.position, playerObject.transform.position);
-
-            if(playerInSight && playerInRange){
-                destinationSetter.target = playerObject.transform;
-                GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
-                bullet.GetComponent<Projectile>().setMoveDirection(playerObject.transform.position - transform.position);
-            } else {
-                destinationSetter.target = spawnObject.transform;
-            }
+            calculateDistanceFromPlayer();
+            setDestination();
         }
 
-        void isPlayerInSight(){
-            //Implementar raycast com layermask
-            hit = Physics2D.Raycast(transform.position, playerObject.transform.position - transform.position);
+        void canSeePlayer(){
+            int layerMask = LayerMask.GetMask(layerMaskStrings);
+            hit = Physics2D.Raycast(transform.position, playerObject.transform.position - transform.position, enemyVisionRange, layerMask);
             if (hit.collider != null)
             {
-                playerInSight = (hit.transform.tag == "Player");
+                seeingPlayer = (hit.transform.tag == "Player");
                 raycastHitDistance = Mathf.Abs(hit.point.y - transform.position.y);
+            } else {
+                seeingPlayer = false;
             }
         }
 
-        void isPlayerInRange(){
+        void canHearPlayer(){
             distanceFromPlayer = Vector3.Distance(transform.position, playerObject.transform.position);
-            playerInRange = (distanceFromPlayer <= playerDetectionRange);
+            hearingPlayer = (distanceFromPlayer <= enemyHearingRange);
         }
 
         void updateLineRenderer(){
-            if(playerInSight){
+            if(seeingPlayer){
                 lineRenderer.enabled = true;
                 lineRenderer.SetPosition(0, transform.position);
                 lineRenderer.SetPosition(1, playerObject.transform.position);
             }else{
                 lineRenderer.enabled = false;
             }
+        }
+
+        void calculateDistanceFromPlayer(){
+            distanceFromPlayer = Vector3.Distance(transform.position, playerObject.transform.position);
+        }
+
+        void setDestination(){
+            aiLerp.canMove = !seeingPlayer;
+            
+            if(seeingPlayer){
+                destinationSetter.target = playerObject.transform;
+            } else if(hearingPlayer){
+                destinationSetter.target = playerObject.transform;
+            } else {
+                destinationSetter.target = spawnObject.transform;
+            }
+        }
+
+        private IEnumerator ShootCycle()
+        {
+            yield return new WaitForSeconds(shootDelay);
+            if(seeingPlayer) Shoot();
+            StartCoroutine("ShootCycle");
+        }
+
+        void Shoot(){
+            GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
+            bullet.GetComponent<Projectile>().setMoveDirection(playerObject.transform.position - transform.position);
         }
     }
 }

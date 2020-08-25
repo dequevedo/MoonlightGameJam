@@ -5,12 +5,8 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed;
-    public GameObject player;
+    public GameObject hitEffect;
     private Vector2 moveDirection;
-
-    void Awake() {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
 
     void Update()
     {
@@ -20,6 +16,12 @@ public class Projectile : MonoBehaviour
     }
 
     public void setMoveDirection(Vector2 direction){
-        moveDirection = direction;
+        moveDirection = direction.normalized;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
