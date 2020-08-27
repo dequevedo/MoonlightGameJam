@@ -5,23 +5,26 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed;
+    public int damage = 5;
     public GameObject hitEffect;
     private Vector2 moveDirection;
+    private Rigidbody2D rigidbody;
 
-    void Update()
-    {
-        transform.Translate(new Vector2(
-            moveDirection.x * Time.deltaTime * speed, 
-            moveDirection.y * Time.deltaTime * speed));
+    void Awake(){
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    public void setMoveDirection(Vector2 direction){
-        moveDirection = direction.normalized;
+    void FixedUpdate()
+    {
+        rigidbody.MovePosition(transform.position + transform.right * Time.fixedDeltaTime * speed);
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
         Instantiate(hitEffect, transform.position, Quaternion.identity);
+        if(col.transform.tag == "Player"){
+            col.gameObject.GetComponent<Player>().takeDamage(damage);
+        }
         Destroy(gameObject);
     }
 }

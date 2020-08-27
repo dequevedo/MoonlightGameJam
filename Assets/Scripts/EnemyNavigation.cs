@@ -7,7 +7,7 @@ namespace Pathfinding {
     public class EnemyNavigation : MonoBehaviour
     {
         [Header("Dependencies")]
-        public float shootDelay = 1;
+        public float shootDelay = 1.2f;
         public GameObject spawnObject;
         public GameObject playerObject;
         public float enemyVisionRange;
@@ -40,11 +40,11 @@ namespace Pathfinding {
 
         void Update()
         {
-            visionGizmo.transform.localScale = new Vector3(enemyVisionRange*2, enemyVisionRange*2, enemyVisionRange*2);
-            hearingGizmo.transform.localScale = new Vector3(enemyHearingRange*2, enemyHearingRange*2, enemyHearingRange*2);
+            //visionGizmo.transform.localScale = new Vector3(enemyVisionRange*2, enemyVisionRange*2, enemyVisionRange*2);
+            //hearingGizmo.transform.localScale = new Vector3(enemyHearingRange*2, enemyHearingRange*2, enemyHearingRange*2);
             canSeePlayer();
             canHearPlayer();
-            updateLineRenderer();
+            //updateLineRenderer();
             calculateDistanceFromPlayer();
             setDestination();
         }
@@ -81,7 +81,7 @@ namespace Pathfinding {
         }
 
         void setDestination(){
-            aiLerp.canMove = !seeingPlayer;
+            aiLerp.canMove = !seeingPlayer || (seeingPlayer && (distanceFromPlayer > enemyHearingRange));
             
             if(seeingPlayer){
                 destinationSetter.target = playerObject.transform;
@@ -101,7 +101,7 @@ namespace Pathfinding {
 
         void Shoot(){
             GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
-            bullet.GetComponent<Projectile>().setMoveDirection(playerObject.transform.position - transform.position);
+            bullet.transform.right = playerObject.transform.position - transform.position;
         }
     }
 }
