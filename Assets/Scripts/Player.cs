@@ -77,6 +77,5 @@ public class Player : MonoBehaviour
 
     void Aim()
     {
-  
     }
 }
