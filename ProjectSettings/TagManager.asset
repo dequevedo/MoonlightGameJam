@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - PickUp
+  - PickUpWaterStone
+  - PickUpFireStone
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,8 @@ TagManager:
   - Enemy
   - Scenery
   - EnemyProjectile
-  - 
-  - 
+  - Hole
+  - PickUp
   - 
   - 
   - 
