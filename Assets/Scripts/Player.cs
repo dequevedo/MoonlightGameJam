@@ -77,9 +77,6 @@ public class Player : MonoBehaviour
 
     void Aim()
     {
-        if (movement != Vector2.zero)
-        {
-
-        }
+  
     }
 }
