@@ -6442,25 +6442,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bffeb3ea873ffc54e901d75b64f062e0, type: 3}
---- !u!1 &858495676 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6976020474152537015, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
-  m_PrefabInstance: {fileID: 2076049252}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &858495685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858495676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a06f3e79eb7aea45b6d1e07e8d19994, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 217324640}
-  stoneType: None
 --- !u!1 &880751699
 GameObject:
   m_ObjectHideFlags: 0
@@ -7088,11 +7069,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4865908724867096576, guid: 624429afe5228e94abb9dea88e96abec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.68
+      value: 2.14
       objectReference: {fileID: 0}
     - target: {fileID: 4865908724867096576, guid: 624429afe5228e94abb9dea88e96abec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.32
+      value: 27.03
       objectReference: {fileID: 0}
     - target: {fileID: 4865908724867096576, guid: 624429afe5228e94abb9dea88e96abec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7136,7 +7117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4865908724867096578, guid: 624429afe5228e94abb9dea88e96abec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 624429afe5228e94abb9dea88e96abec, type: 3}
@@ -8135,6 +8116,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4269454369427582472, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 217324640}
+    - target: {fileID: -4269454369427582472, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: stoneType
+      value: None
+      objectReference: {fileID: 0}
     - target: {fileID: 148517119, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
       propertyPath: crosshair
       value: 
@@ -8142,7 +8131,15 @@ PrefabInstance:
     - target: {fileID: 148517119, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
       propertyPath: bulletPrefab
       value: 
+      objectReference: {fileID: 4756491403909494411, guid: 980c64f52d5d0fb46a70f0cbcb30135c, type: 3}
+    - target: {fileID: 148517119, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: weapon1
+      value: 
       objectReference: {fileID: 3156375795978365802, guid: 8832279e573f57341a1378a9769f0afc, type: 3}
+    - target: {fileID: 148517119, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: weapon2
+      value: 
+      objectReference: {fileID: 5894878118130457937, guid: 6deaeda892be7c44e852e62a959938d7, type: 3}
     - target: {fileID: 6976020474152537012, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.77
@@ -8330,7 +8327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2114075333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8355,7 +8352,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114075332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8437,7 +8434,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114075332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f0333c11b8f69042962ac3dbbbcb80c, type: 3}
   m_Name: 
