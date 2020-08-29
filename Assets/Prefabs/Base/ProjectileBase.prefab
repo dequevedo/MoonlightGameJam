@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4756491403909494415}
   - component: {fileID: 559055780803094438}
   m_Layer: 14
-  m_Name: PlayerProjectile
+  m_Name: ProjectileBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 4797229610980651798, guid: d67dede84eb09f24aa359aa77c7c181a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8fb0e69f50a46d64cab1d8c2633a6031, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,8 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d1f61dcf2ab2746ac44f30df96463f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionTag: Enemy
   speed: 9
-  damage: 1
+  damage: 5
   hitEffect: {fileID: 7845190071621270390, guid: 7163533bacd9d754291b577cb5887259, type: 3}
 --- !u!58 &559055780803094438
 CircleCollider2D:

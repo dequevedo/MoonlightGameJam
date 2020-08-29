@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public string collisionTag;
     public float speed;
     public int damage = 5;
     public GameObject hitEffect;
     private Vector2 moveDirection;
     private Rigidbody2D rigidbody;
+
+    
 
     void Awake(){
         rigidbody = GetComponent<Rigidbody2D>();
@@ -22,8 +25,9 @@ public class Projectile : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         Instantiate(hitEffect, transform.position, Quaternion.identity);
-        if(col.transform.tag == "Player"){
-            col.gameObject.GetComponent<Player>().takeDamage(damage);
+        if(col.transform.tag == collisionTag)
+        {
+            col.gameObject.GetComponent<Health>().takeDamage(damage);
         }
         Destroy(gameObject);
     }
