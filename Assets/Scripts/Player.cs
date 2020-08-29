@@ -16,26 +16,18 @@ public class Player : MonoBehaviour
     public Text countText;
     public string stoneType = "";
 
-    private Vector3 target;
-    public GameObject crosshair;
-
-
     public GameObject playerDeathFX;
 
     void Start()
     {
         SetStoneText();
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Update()
     {
         Move();
-        
-        target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
-        crosshair.transform.position = new Vector2(target.x, target.y);
-
     }
 
     public void Move()

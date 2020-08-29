@@ -288,7 +288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2852443166016097488, guid: e52032b16d87e4b4fa80f23e85865aaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -535,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2355394338134728948, guid: d4517e151c32f1c4fbae39e50395f1bc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2355394338134728950, guid: d4517e151c32f1c4fbae39e50395f1bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -843,6 +843,48 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &148517112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6976020474152537015, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+  m_PrefabInstance: {fileID: 2076049252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &148517118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6976020474152537012, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+  m_PrefabInstance: {fileID: 2076049252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &148517119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148517112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ed88a9df20b6d408e1099e9ddb2ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 18416674}
+  bulletPrefab: {fileID: 4756491403909494411, guid: 980c64f52d5d0fb46a70f0cbcb30135c, type: 3}
+  bulletSpeed: 5
+  target: {x: 0, y: 0, z: 0}
+--- !u!114 &148517120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148517112}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c13491e6ce7e14692b111d7a81dfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  playerObject: {fileID: 148517112}
+  crosshair: {fileID: 18416674}
+  target: {x: 0, y: 0, z: 0}
 --- !u!1 &217324638
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,7 +6714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2355394338134728948, guid: d4517e151c32f1c4fbae39e50395f1bc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2355394338134728950, guid: d4517e151c32f1c4fbae39e50395f1bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7246,6 +7288,18 @@ PrefabInstance:
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 18416674}
+    - target: {fileID: 6976020474152537018, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976020474152537018, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: playerTip
+      value: 
+      objectReference: {fileID: 148517118}
+    - target: {fileID: 6976020474152537018, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
+      propertyPath: stoneType
+      value: None
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a88f784a14a4bc4090447f96b50987d, type: 3}
 --- !u!1 &2077974113
@@ -7495,7 +7549,6 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 0}
   stoneType: 
-  crosshair: {fileID: 0}
   playerDeathFX: {fileID: 0}
 --- !u!50 &2114075338
 Rigidbody2D:
