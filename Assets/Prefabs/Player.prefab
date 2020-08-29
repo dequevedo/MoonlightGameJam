@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6976020474152537017}
   - component: {fileID: 148517119}
   - component: {fileID: 8445960815708821070}
+  - component: {fileID: -4269454369427582472}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -136,8 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  countText: {fileID: 0}
-  stoneType: None
 --- !u!50 &6976020474152537017
 Rigidbody2D:
   serializedVersion: 4
@@ -172,9 +171,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 0}
-  bulletPrefab: {fileID: 4756491403909494411, guid: 980c64f52d5d0fb46a70f0cbcb30135c, type: 3}
+  bulletPrefab: {fileID: 0}
   bulletSpeed: 5
   target: {x: 0, y: 0, z: 0}
+  weapon1: {fileID: 0}
+  weapon2: {fileID: 0}
 --- !u!114 &8445960815708821070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +191,20 @@ MonoBehaviour:
   maxHealth: 100
   actualHealth: 100
   deathFX: {fileID: 0}
-  healthBar: {fileID: 0}
+--- !u!114 &-4269454369427582472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976020474152537015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a06f3e79eb7aea45b6d1e07e8d19994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  stoneType: 
 --- !u!1 &6978443130238808389
 GameObject:
   m_ObjectHideFlags: 0

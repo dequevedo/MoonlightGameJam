@@ -8,6 +8,8 @@ TagManager:
   - PickUp
   - PickUpWaterStone
   - PickUpFireStone
+  - EnemyFire
+  - EnemyWater
   layers:
   - Default
   - TransparentFX
