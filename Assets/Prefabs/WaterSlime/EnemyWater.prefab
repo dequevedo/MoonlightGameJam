@@ -59,8 +59,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3297201606121218115, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7596945238411911144, guid: b61c83a8aa6f8c34981c38591197e17a, type: 3}
     - target: {fileID: 3297201606121218118, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
       propertyPath: m_Name
+      value: EnemyWater
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297201606121218118, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: m_TagString
       value: EnemyWater
       objectReference: {fileID: 0}
     - target: {fileID: 6704125922469074275, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}

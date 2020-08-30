@@ -8,6 +8,12 @@ TagManager:
   - PickUp
   - PickUpWaterStone
   - PickUpFireStone
+  - EnemyFire
+  - EnemyWater
+  - monsterCount
+  - GameOverCanvas
+  - CommandsTipsCanvas
+  - HealthBarCanvas
   layers:
   - Default
   - TransparentFX

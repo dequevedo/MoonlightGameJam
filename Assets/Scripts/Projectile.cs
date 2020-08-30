@@ -9,17 +9,15 @@ public class Projectile : MonoBehaviour
     public int damage = 5;
     public GameObject hitEffect;
     private Vector2 moveDirection;
-    private Rigidbody2D rigidbody;
-
-    
+    private Rigidbody2D rb;
 
     void Awake(){
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        rigidbody.MovePosition(transform.position + transform.right * Time.fixedDeltaTime * speed);
+        rb.MovePosition(transform.position + transform.right * Time.fixedDeltaTime * speed);
     }
 
     void OnCollisionEnter2D(Collision2D col)

@@ -59,6 +59,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFire
       objectReference: {fileID: 0}
+    - target: {fileID: 3297201606121218118, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: m_TagString
+      value: EnemyFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297201606121218173, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6704125922469074275, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
       propertyPath: actualHealth
       value: 70

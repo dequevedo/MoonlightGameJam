@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2039998110034282161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24406433, y: 0.24406433, z: 0.24406433}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 7845190069668104624}
   m_Father: {fileID: 0}
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionTag: Player
   speed: 9
-  damage: 1
+  damage: 10
   hitEffect: {fileID: 7845190071621270390, guid: 7163533bacd9d754291b577cb5887259, type: 3}
 --- !u!95 &-2849047113289588814
 Animator:
