@@ -40,9 +40,9 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator commandsTipsDisplay()
     {
-        yield return new WaitForSeconds(5f);
-        for(int i = 0; i < 400; i++){
-            yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(8f);
+        for(int i = 0; i < 800; i++){
+            yield return new WaitForSeconds(0.0025f);
             canvasManager.commandsTips.transform.Translate(new Vector3(0,-0.7f,0)); //Mover a tela de dicas de comandos para baixo
         }
         canvasManager.commandsTips.SetActive(false);
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     public void MonsterCountKill(){ 
         this.monsterKill ++;
-        canvasManager.countText.text = "Monstros mortos: " + monsterKill;
+        canvasManager.countText.text = "Monsters Killed: " + monsterKill;
     }
 
     public void HealthUpdate(){

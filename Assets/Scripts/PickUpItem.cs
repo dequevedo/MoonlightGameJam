@@ -40,6 +40,6 @@ public class PickUpItem : MonoBehaviour
 
     void SetStoneText()
     {
-        countText.text = "Pedra: " + stoneType;
+        countText.text = "Rune: " + stoneType;
     }
 }
