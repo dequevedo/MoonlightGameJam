@@ -1,0 +1,604 @@
+fileFormatVersion: 2
+guid: 805859a2e601a304cb09e7410bdd8aec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -678940794449088909
+    second: Mage (1)_0
+  - first:
+      213: -6547187249435779523
+    second: Mage (1)_1
+  - first:
+      213: -6352279162841212606
+    second: Mage (1)_2
+  - first:
+      213: 129645289258314148
+    second: Mage (1)_3
+  - first:
+      213: 5641711065590367814
+    second: Mage (1)_4
+  - first:
+      213: -5751877970582114962
+    second: Mage (1)_5
+  - first:
+      213: -8495821177731860706
+    second: Mage (1)_6
+  - first:
+      213: 4858363215845941074
+    second: Mage (1)_7
+  - first:
+      213: -7671575605865152623
+    second: Mage (1)_8
+  - first:
+      213: 2991762028900016436
+    second: Mage (1)_9
+  - first:
+      213: 5627904696554620992
+    second: Mage (1)_10
+  - first:
+      213: -1666342025626458792
+    second: Mage (1)_11
+  - first:
+      213: -8727732627787538634
+    second: Mage (1)_12
+  - first:
+      213: -2439281215501239541
+    second: Mage (1)_13
+  - first:
+      213: -705395393994444640
+    second: Mage (1)_14
+  - first:
+      213: -8103300745945852728
+    second: Mage (1)_15
+  - first:
+      213: 4617967746288060625
+    second: Mage (1)_16
+  - first:
+      213: -6902917786442830468
+    second: Mage (1)_17
+  - first:
+      213: -2834266417789852282
+    second: Mage (1)_18
+  - first:
+      213: 2756932771124763827
+    second: Mage (1)_19
+  - first:
+      213: 2328142712070683035
+    second: Mage (1)_20
+  - first:
+      213: 4757588679221202147
+    second: Mage (1)_21
+  - first:
+      213: -5350186830382369341
+    second: Mage (1)_22
+  - first:
+      213: 1705528454632072901
+    second: Mage (1)_23
+  - first:
+      213: -8916388900346341309
+    second: Mage (1)_24
+  - first:
+      213: -2541530704330851218
+    second: Mage (1)_25
+  - first:
+      213: -6880894225545696668
+    second: Mage (1)_26
+  - first:
+      213: -1874656317371434779
+    second: Mage (1)_27
+  - first:
+      213: 8352117224554546616
+    second: Mage (1)_28
+  - first:
+      213: 6268549852784037682
+    second: Mage (1)_29
+  - first:
+      213: 4655049453915190387
+    second: Mage (1)_30
+  - first:
+      213: -945576931904094296
+    second: Mage (1)_31
+  - first:
+      213: 4351024255373161920
+    second: Mage (1)_32
+  - first:
+      213: 4507238752750211891
+    second: Mage (1)_33
+  - first:
+      213: 9175779388417379122
+    second: Mage (1)_34
+  - first:
+      213: -6939566146772118348
+    second: Mage (1)_35
+  - first:
+      213: -4282336883448709250
+    second: Mage (1)_36
+  - first:
+      213: -6943718426158995053
+    second: Mage (1)_37
+  - first:
+      213: 2041800284911389140
+    second: Mage (1)_38
+  - first:
+      213: 2411121039045082193
+    second: Mage (1)_39
+  - first:
+      213: 2077584205890594912
+    second: Mage (1)_40
+  - first:
+      213: 7111110974803885361
+    second: Mage (1)_41
+  - first:
+      213: 335802026740862165
+    second: Mage (1)_42
+  - first:
+      213: 3909177408899877696
+    second: Mage (1)_43
+  - first:
+      213: 7665348948663430819
+    second: Mage (1)_44
+  - first:
+      213: -3872443066696545024
+    second: Mage (1)_45
+  - first:
+      213: 7584410250166742476
+    second: Mage (1)_46
+  - first:
+      213: 2515240635938121816
+    second: Mage (1)_47
+  - first:
+      213: 401374666226017531
+    second: Mage (1)_48
+  - first:
+      213: -3605781966494833236
+    second: Mage (1)_49
+  - first:
+      213: -568500881574789336
+    second: Mage (1)_50
+  - first:
+      213: -998593948296497688
+    second: Mage (1)_51
+  - first:
+      213: 7561915930950098421
+    second: Mage (1)_52
+  - first:
+      213: -1598543407998963206
+    second: Mage (1)_53
+  - first:
+      213: -7703911458363988455
+    second: Mage (1)_54
+  - first:
+      213: -5416759948660418262
+    second: Mage (1)_55
+  - first:
+      213: 4457047978997718219
+    second: Mage (1)_56
+  - first:
+      213: -7608304339632875463
+    second: Mage (1)_57
+  - first:
+      213: 8290642776530040498
+    second: Mage (1)_58
+  - first:
+      213: -4586439278684231668
+    second: Mage (1)_59
+  - first:
+      213: 2138344109553684467
+    second: Mage (1)_0
+  - first:
+      213: -6728980697572959883
+    second: Mage (1)_1
+  - first:
+      213: -8393623977261367500
+    second: Mage (1)_2
+  - first:
+      213: 7439317544964808272
+    second: Mage (1)_3
+  - first:
+      213: 8089682578037621525
+    second: Mage (1)_4
+  - first:
+      213: -4117045493364749528
+    second: Mage (1)_5
+  - first:
+      213: -7868814766754551187
+    second: Mage (1)_6
+  - first:
+      213: 2785705687392996418
+    second: Mage (1)_7
+  - first:
+      213: -1453869849437967593
+    second: Mage (1)_8
+  - first:
+      213: 3718491111876242215
+    second: Mage (1)_9
+  - first:
+      213: 955919220957365362
+    second: Mage (1)_10
+  - first:
+      213: 6925638439564641626
+    second: Mage (1)_11
+  - first:
+      213: 9181072629890547894
+    second: Mage (1)_12
+  - first:
+      213: -7023517031862301823
+    second: Mage (1)_13
+  - first:
+      213: -8163064488359341852
+    second: Mage (1)_14
+  - first:
+      213: -3894700998688444918
+    second: Mage (1)_15
+  - first:
+      213: -7681330256990543457
+    second: Mage (1)_16
+  - first:
+      213: 5474728987837279921
+    second: Mage (1)_17
+  - first:
+      213: 697721668838527657
+    second: Mage (1)_18
+  - first:
+      213: 2657506639940711569
+    second: Mage (1)_19
+  - first:
+      213: -2327600575842637081
+    second: Mage (1)_20
+  - first:
+      213: 8236282570877690154
+    second: Mage (1)_21
+  - first:
+      213: 5344886173350137804
+    second: Mage (1)_22
+  - first:
+      213: -8207617927545950529
+    second: Mage (1)_23
+  - first:
+      213: 2555806521460340536
+    second: Mage (1)_24
+  - first:
+      213: 5661253633091500146
+    second: Mage (1)_25
+  - first:
+      213: -3442445102317283832
+    second: Mage (1)_26
+  - first:
+      213: -3687173749396934331
+    second: Mage (1)_27
+  - first:
+      213: -6868006917302259937
+    second: Mage (1)_28
+  - first:
+      213: 8461693697803941649
+    second: Mage (1)_29
+  - first:
+      213: -5995210008505960649
+    second: Mage (1)_30
+  - first:
+      213: -3912393858424963282
+    second: Mage (1)_31
+  - first:
+      213: 2039402061471187993
+    second: Mage (1)_32
+  - first:
+      213: -8345753725032394499
+    second: Mage (1)_33
+  - first:
+      213: -1812929703646489861
+    second: Mage (1)_34
+  - first:
+      213: -8756453261682415321
+    second: Mage (1)_35
+  - first:
+      213: 3957300532688719341
+    second: Mage (1)_36
+  - first:
+      213: -104436418054858871
+    second: Mage (1)_37
+  - first:
+      213: -997908921070515404
+    second: Mage (1)_38
+  - first:
+      213: -5625554111753934451
+    second: Mage (1)_39
+  - first:
+      213: -8158396042533020763
+    second: Mage (1)_40
+  - first:
+      213: 2501438931155943701
+    second: Mage (1)_41
+  - first:
+      213: -6776952631678730833
+    second: Mage (1)_42
+  - first:
+      213: -9087314779091494634
+    second: Mage (1)_43
+  - first:
+      213: -451854522244147664
+    second: Mage (1)_44
+  - first:
+      213: 2944489055173050368
+    second: Mage (1)_45
+  - first:
+      213: 3101310469297931034
+    second: Mage (1)_46
+  - first:
+      213: 8095372270898545464
+    second: Mage (1)_47
+  - first:
+      213: 8755253432709273697
+    second: Mage (1)_48
+  - first:
+      213: -5702461317428279125
+    second: Mage (1)_49
+  - first:
+      213: 4367563554276607958
+    second: Mage (1)_50
+  - first:
+      213: -7504119133450862404
+    second: Mage (1)_51
+  - first:
+      213: -8004343097291466878
+    second: Mage (1)_52
+  - first:
+      213: -5850512934556823742
+    second: Mage (1)_53
+  - first:
+      213: 5295922896803869932
+    second: Mage (1)_54
+  - first:
+      213: -434463198591703657
+    second: Mage (1)_55
+  - first:
+      213: -2213352662378278114
+    second: Mage (1)_56
+  - first:
+      213: 3281920999976447387
+    second: Mage (1)_57
+  - first:
+      213: 9120462187431336617
+    second: Mage (1)_58
+  - first:
+      213: 6953455219183871832
+    second: Mage (1)_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mage (1)_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 512
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff0f7163acecad10800000000000000
+      internalID: 2138344109553684467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage (1)_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 512
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57914bc05bbdd92a0800000000000000
+      internalID: -6728980697572959883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage (1)_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f7229c67bd38b80800000000000000
+      internalID: -8393623977261367500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage (1)_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 256
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e55f654e3cd3760800000000000000
+      internalID: 7439317544964808272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage (1)_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51349999173544070800000000000000
+      internalID: 8089682578037621525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage (1)_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b0fd3dfe05dd6c0800000000000000
+      internalID: -4117045493364749528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 33b5e7ef97e6f134885132a704a95885
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
