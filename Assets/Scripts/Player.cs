@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 10;
+    public float speed = 5;
     public float dashDistance = 12000;
     private Vector3 movement;
     private Rigidbody2D rb;
-    public Animation walkAnimation;
+    public Animator anim;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -27,15 +27,28 @@ public class Player : MonoBehaviour
 
     public void Move()
     {
-        movement = new Vector3(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical"),
-            0
-        ).normalized * Time.deltaTime * speed;
+        float H = Input.GetAxisRaw("Horizontal");
+        float V = Input.GetAxisRaw("Vertical");
+
+        movement = new Vector3(H, V, 0).normalized * Time.deltaTime * speed;
+
+        if (H != 0)
+        {
+            transform.localScale = new Vector3(-(H/4), transform.localScale.y, transform.localScale.z);
+        }
 
         
-        
+
+
         rb.MovePosition(transform.position + movement);
+
+        if (movement.magnitude > 0){
+            anim.SetBool("isRunning", true);
+        } else { 
+            anim.SetBool("isRunning", false);
+        }
+
+
     }
 
     void Dash(){
