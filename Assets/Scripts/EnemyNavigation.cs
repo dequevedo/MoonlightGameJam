@@ -33,20 +33,17 @@ namespace Pathfinding {
         void Start()
         {
             lineRenderer = GetComponent<LineRenderer>();
-            //playerObject = GameObject.FindGameObjectWithTag("Player");
-            //spawnObject = GameObject.FindGameObjectWithTag("Spawn");
             StartCoroutine("ShootCycle");
         }
 
         void Update()
         {
-            //visionGizmo.transform.localScale = new Vector3(enemyVisionRange*2, enemyVisionRange*2, enemyVisionRange*2);
-            //hearingGizmo.transform.localScale = new Vector3(enemyHearingRange*2, enemyHearingRange*2, enemyHearingRange*2);
-            canSeePlayer();
-            canHearPlayer();
-            //updateLineRenderer();
-            calculateDistanceFromPlayer();
-            setDestination();
+            if(playerObject != null){
+                canSeePlayer();
+                canHearPlayer();
+                calculateDistanceFromPlayer();
+                setDestination();
+            }
         }
 
         void canSeePlayer(){
@@ -95,8 +92,10 @@ namespace Pathfinding {
         private IEnumerator ShootCycle()
         {
             yield return new WaitForSeconds(shootDelay);
-            if(seeingPlayer) Shoot();
-            StartCoroutine("ShootCycle");
+            if(playerObject != null){
+                if(seeingPlayer) Shoot();
+                StartCoroutine("ShootCycle");
+            }
         }
 
         void Shoot(){

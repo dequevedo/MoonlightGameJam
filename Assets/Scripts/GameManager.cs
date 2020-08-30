@@ -16,21 +16,15 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         countText = GameObject.FindGameObjectWithTag("monsterCount").GetComponent<Text>();
-
         player = GameObject.FindGameObjectWithTag("Player");
         canvas = GameObject.Find("Canvas");
         StartCoroutine("isGameOver");
     }
 
-    void Update()
-    {
-
-    }
-
     private IEnumerator isGameOver()
     {
         yield return new WaitForSeconds(0.1f);
-        if(!player.activeInHierarchy){
+        if(player == null){
             Instantiate(gameOverPrefab, canvas.transform);
             StopCoroutine("isGameOver");
         } else {
@@ -42,8 +36,4 @@ public class GameManager : MonoBehaviour
         this.monsterKill ++;
         countText.text = "Monstros mortos: " + monsterKill;
     }
-
-
-
-
 }

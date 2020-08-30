@@ -11,8 +11,6 @@ public class Projectile : MonoBehaviour
     private Vector2 moveDirection;
     private Rigidbody2D rigidbody;
 
-    
-
     void Awake(){
         rigidbody = GetComponent<Rigidbody2D>();
     }
