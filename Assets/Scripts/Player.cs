@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Player : MonoBehaviour
 {
-
     public float speed = 10;
     
-
     void Update()
     {
         Move();
@@ -23,9 +20,5 @@ public class Player : MonoBehaviour
         ).normalized * Time.deltaTime * speed;
         
         transform.Translate(movement);
-
     } 
-
-   
-
 }
