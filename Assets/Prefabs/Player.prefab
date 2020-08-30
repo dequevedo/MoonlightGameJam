@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 6976020474152537019}
   - component: {fileID: 6976020474152537018}
   - component: {fileID: 6976020474152537017}
+  - component: {fileID: 148517119}
+  - component: {fileID: 8445960815708821070}
+  - component: {fileID: -4269454369427582472}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -133,11 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0333c11b8f69042962ac3dbbbcb80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  actualHealth: 100
-  healthBar: {fileID: 385794443772527335}
   speed: 10
-  playerDeathFX: {fileID: 7845190071621270390, guid: 0a6d19a1432ded84794c12a687584fe5, type: 3}
 --- !u!50 &6976020474152537017
 Rigidbody2D:
   serializedVersion: 4
@@ -159,6 +158,53 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &148517119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976020474152537015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ed88a9df20b6d408e1099e9ddb2ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  bulletSpeed: 5
+  target: {x: 0, y: 0, z: 0}
+  weapon1: {fileID: 0}
+  weapon2: {fileID: 0}
+--- !u!114 &8445960815708821070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976020474152537015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 804dbe11241dc2b4f8a87f9e8c4a304b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  actualHealth: 100
+  deathFX: {fileID: 0}
+--- !u!114 &-4269454369427582472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976020474152537015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a06f3e79eb7aea45b6d1e07e8d19994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  stoneType: 
 --- !u!1 &6978443130238808389
 GameObject:
   m_ObjectHideFlags: 0

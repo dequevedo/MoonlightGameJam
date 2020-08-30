@@ -8,6 +8,8 @@ TagManager:
   - PickUp
   - PickUpWaterStone
   - PickUpFireStone
+  - EnemyFire
+  - EnemyWater
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - EnemyProjectile
   - Hole
   - PickUp
-  - 
+  - PlayerProjectile
   - 
   - 
   - 
