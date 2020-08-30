@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BugFixing2.unity
+    guid: e11806c183cab6e4d806539ba9431740
   m_configObjects: {}

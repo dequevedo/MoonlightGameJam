@@ -91,5 +91,9 @@ PrefabInstance:
       propertyPath: damage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4756491403909494415, guid: 980c64f52d5d0fb46a70f0cbcb30135c, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 7845190071621270390, guid: 749c8b05a721d6149a0e79dea50cd268, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 980c64f52d5d0fb46a70f0cbcb30135c, type: 3}

@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -944026558618853134, guid: 6d96efdb4a7e32844980bb63bf31c6e5, type: 3}
+    - target: {fileID: 3297201605482005141, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3297201606121218114, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -58,6 +62,14 @@ PrefabInstance:
     - target: {fileID: 3297201606121218114, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297201606121218114, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297201606121218114, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3297201606121218115, guid: 5515724469eee2b4d83cf5f68ddb365b, type: 3}
       propertyPath: projectile

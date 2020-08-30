@@ -19,9 +19,9 @@ public class MonsterSpawner : MonoBehaviour
 
         private IEnumerator SpawnNewMonsterCoroutine()
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(12);
             Instantiate(spawnFX, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             newMonster();
         }
 

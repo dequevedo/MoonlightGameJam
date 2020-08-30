@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0333c11b8f69042962ac3dbbbcb80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   dashDistance: 12000
   anim: {fileID: 0}
 --- !u!50 &6976020474152537017
@@ -276,6 +276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   stoneType: None
+  runeSpawnerFire: {fileID: 0}
+  runeSpawnerWater: {fileID: 0}
 --- !u!61 &3520165123134071500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -520,6 +522,34 @@ PrefabInstance:
     - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
       propertyPath: useUnscaledTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.6981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.6553044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.6553044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.5283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.5283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236129732447602773, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.5283019
       objectReference: {fileID: 0}
     - target: {fileID: 8620587257300136413, guid: 5196a0b11542e1645ae39ceb4349d52f, type: 3}
       propertyPath: m_Name
