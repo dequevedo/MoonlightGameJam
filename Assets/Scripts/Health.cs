@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Health : MonoBehaviour
 {
 
@@ -9,11 +10,18 @@ public class Health : MonoBehaviour
     private float maxHealth = 100;
     [SerializeField]
     private float actualHealth = 100;
+    
+    private GameManager gameManager;
+   
+    public GameObject monsterSpawner;
 
     public GameObject deathFX;
 
-    //public SpriteRenderer healthBar;
+    void Start() {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
 
+    //public SpriteRenderer healthBar;
     public void takeDamage(float damage)
     {
         actualHealth -= damage;
@@ -23,7 +31,22 @@ public class Health : MonoBehaviour
         if (actualHealth <= 0)
         {
             Instantiate(deathFX, transform.position, Quaternion.identity);
-            gameObject.SetActive(false);
+            MonsterCountKill();
+
+            monsterSpawner.GetComponent<Pathfinding.MonsterSpawner>().createMonster();
+
+            Destroy(this.gameObject);
         }
     }
+
+    public void MonsterCountKill(){
+        switch (this.tag){
+            case "Player":
+            break;    
+            default:
+                gameManager.MonsterCountKill();
+            break;
+        }
+    }
+
 }

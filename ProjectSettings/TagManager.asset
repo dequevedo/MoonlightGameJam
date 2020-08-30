@@ -10,6 +10,7 @@ TagManager:
   - PickUpFireStone
   - EnemyFire
   - EnemyWater
+  - monsterCount
   layers:
   - Default
   - TransparentFX
