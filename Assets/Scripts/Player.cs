@@ -24,5 +24,5 @@ public class Player : MonoBehaviour
         ).normalized * Time.deltaTime * speed;
 
         rb.MovePosition(transform.position + movement);
-    } 
+    }
 }

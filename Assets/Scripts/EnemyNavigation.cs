@@ -26,24 +26,27 @@ namespace Pathfinding {
         public bool seeingPlayer = false;
         public bool hearingPlayer = false;
         private RaycastHit2D hit;
-        private LineRenderer lineRenderer;
         public AIDestinationSetter destinationSetter;
         public AILerp aiLerp;
+        IAstarAI ai;
 
         void Start()
         {
-            lineRenderer = GetComponent<LineRenderer>();
+            playerObject = GameObject.FindGameObjectWithTag("Player");
+            ai = GetComponent<Pathfinding.IAstarAI>();
             StartCoroutine("ShootCycle");
         }
 
         void Update()
         {
-            if(playerObject != null){
+            ai.destination = playerObject.transform.position;
+            //destinationSetter.target = playerObject.transform;
+            /*if(playerObject != null){
                 canSeePlayer();
                 canHearPlayer();
                 calculateDistanceFromPlayer();
                 setDestination();
-            }
+            }*/
         }
 
         void canSeePlayer(){
@@ -63,22 +66,12 @@ namespace Pathfinding {
             hearingPlayer = (distanceFromPlayer <= enemyHearingRange);
         }
 
-        void updateLineRenderer(){
-            if(seeingPlayer){
-                lineRenderer.enabled = true;
-                lineRenderer.SetPosition(0, transform.position);
-                lineRenderer.SetPosition(1, playerObject.transform.position);
-            }else{
-                lineRenderer.enabled = false;
-            }
-        }
-
         void calculateDistanceFromPlayer(){
             distanceFromPlayer = Vector3.Distance(transform.position, playerObject.transform.position);
         }
 
         void setDestination(){
-            aiLerp.canMove = !seeingPlayer || (seeingPlayer && (distanceFromPlayer > enemyHearingRange));
+            aiLerp.canMove = !seeingPlayer; //|| (seeingPlayer && (distanceFromPlayer > enemyHearingRange));
             
             if(seeingPlayer){
                 destinationSetter.target = playerObject.transform;

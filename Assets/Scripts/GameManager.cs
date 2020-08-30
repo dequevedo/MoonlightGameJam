@@ -7,21 +7,20 @@ public class GameManager : MonoBehaviour
 { 
     private GameObject player;
     private Health playerHealth;
-    public GameObject gameOverPrefab;
-    public Image healthBar;
-    public GameObject canvas;
     public int monsterKill = 0;
-    public Text countText;
-
+    
     public List<GameObject> spawnerList;
+
+    private CanvasManager canvasManager;
 
     void Start()
     {
-        countText = GameObject.FindGameObjectWithTag("monsterCount").GetComponent<Text>();
+        canvasManager = GameObject.Find("Canvas").GetComponent<CanvasManager>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<Health>();
-        canvas = GameObject.Find("Canvas");
+        
         StartCoroutine("isGameOver");
+        StartCoroutine("commandsTipsDisplay");
     }
 
     void Update(){
@@ -32,19 +31,29 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         if(player == null){
-            Instantiate(gameOverPrefab, canvas.transform);
+            canvasManager.gameOverObj.SetActive(true);
             StopCoroutine("isGameOver");
         } else {
             StartCoroutine("isGameOver");
         }
     }
 
+    private IEnumerator commandsTipsDisplay()
+    {
+        yield return new WaitForSeconds(5f);
+        for(int i = 0; i < 400; i++){
+            yield return new WaitForSeconds(0.01f);
+            canvasManager.commandsTips.transform.Translate(new Vector3(0,-0.7f,0)); //Mover a tela de dicas de comandos para baixo
+        }
+        canvasManager.commandsTips.SetActive(false);
+    }
+
     public void MonsterCountKill(){ 
         this.monsterKill ++;
-        countText.text = "Monstros mortos: " + monsterKill;
+        canvasManager.countText.text = "Monstros mortos: " + monsterKill;
     }
 
     public void HealthUpdate(){
-        healthBar.fillAmount = playerHealth.getActualHealth()/100;
+        canvasManager.healthBar.fillAmount = playerHealth.getActualHealth()/100;
     }
 }
