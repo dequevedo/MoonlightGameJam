@@ -112,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297201606121218114}
   - component: {fileID: 3297201606121218113}
+  - component: {fileID: 7557627641355516814}
   - component: {fileID: 3297201606121218119}
   - component: {fileID: -6733288637355352993}
   - component: {fileID: 3297201606121218115}
@@ -157,7 +158,7 @@ MonoBehaviour:
   startEndModifier:
     addPoints: 0
     exactStartPoint: 4
-    exactEndPoint: 0
+    exactEndPoint: 4
     useRaycasting: 0
     mask:
       serializedVersion: 2
@@ -167,6 +168,28 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &7557627641355516814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297201606121218118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6a34d769a1e4ac7b0b30e433aa443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  smoothType: 2
+  subdivisions: 5
+  iterations: 1
+  strength: 0.01
+  uniformLength: 1
+  maxSegmentLength: 1
+  bezierTangentLength: 5
+  offset: 5
+  factor: 0.1
 --- !u!114 &3297201606121218119
 MonoBehaviour:
   m_ObjectHideFlags: 0

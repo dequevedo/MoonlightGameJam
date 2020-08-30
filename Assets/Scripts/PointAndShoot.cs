@@ -15,8 +15,6 @@ public class PointAndShoot : MonoBehaviour
     public GameObject weapon2;
     public GameObject rune;
 
-    public float dashDistance = 12000;
-
     private Rigidbody2D rb;
 
     void Start()
@@ -37,12 +35,6 @@ public class PointAndShoot : MonoBehaviour
         {
             fireBullet(crosshairDirection);
         }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            Dash(crosshairDirection);
-        }
-
     }
 
     void fireBullet(Vector2 direction)
@@ -72,9 +64,4 @@ public class PointAndShoot : MonoBehaviour
 
         }
     }
-
-    void Dash(Vector3 crosshairDirection){
-        rb.AddRelativeForce(crosshairDirection.normalized * dashDistance);
-    }
-
 }
