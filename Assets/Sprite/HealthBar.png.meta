@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: d67dede84eb09f24aa359aa77c7c181a
+guid: eb15ae5b07642534a908a6284e7bca8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4797229610980651798
-    second: FireBall 1_0
+      213: -8227546954408941770
+    second: HealthBar_0
   - first:
-      213: 5456745236327173685
-    second: FireBall 1_1
-  - first:
-      213: 7753582681591705164
-    second: FireBall 1_2
-  - first:
-      213: -5458512122284155246
-    second: FireBall 1_3
+      213: -3178617384780871938
+    second: HealthBar_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,19 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,85 +95,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireBall 1_0
+      name: HealthBar_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 304
-        width: 256
-        height: 144
+        y: 16
+        width: 64
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 613bc741aee239240800000000000000
-      internalID: 4797229610980651798
+      spriteID: 637ab99e2a1e1dd80800000000000000
+      internalID: -8227546954408941770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_1
+      name: HealthBar_1
       rect:
         serializedVersion: 2
-        x: 272
-        y: 304
-        width: 240
-        height: 144
+        x: 0
+        y: 0
+        width: 64
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53e0611a1e04abb40800000000000000
-      internalID: 5456745236327173685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireBall 1_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 240
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4ee4e06e524a9b60800000000000000
-      internalID: 7753582681591705164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireBall 1_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 48
-        width: 256
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29ed61d25287f34b0800000000000000
-      internalID: -5458512122284155246
+      spriteID: ef6414f545843e3d0800000000000000
+      internalID: -3178617384780871938
       vertices: []
       indices: 
       edges: []
@@ -199,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 13c1916f342e91c47820d28c6983da3c
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

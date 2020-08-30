@@ -11,6 +11,9 @@ TagManager:
   - EnemyFire
   - EnemyWater
   - monsterCount
+  - GameOverCanvas
+  - CommandsTipsCanvas
+  - HealthBarCanvas
   layers:
   - Default
   - TransparentFX
