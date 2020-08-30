@@ -5,9 +5,13 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 10;
+    private Rigidbody2D rb;
+
+    void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+    }
     
-    void Update()
-    {
+    void FixedUpdate() {
         Move();
     }
 
@@ -18,7 +22,7 @@ public class Player : MonoBehaviour
             Input.GetAxisRaw("Vertical"),
             0
         ).normalized * Time.deltaTime * speed;
-        
-        transform.Translate(movement);
+
+        rb.MovePosition(transform.position + movement);
     } 
 }
