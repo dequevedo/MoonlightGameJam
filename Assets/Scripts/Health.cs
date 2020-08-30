@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -9,10 +10,16 @@ public class Health : MonoBehaviour
     private float maxHealth = 100;
     [SerializeField]
     private float actualHealth = 100;
-
+    public int monsterKill = 0;
+    public Text countText;
+    
     public GameObject deathFX;
 
     //public SpriteRenderer healthBar;
+
+    void Start() {
+        countText = GameObject.FindGameObjectWithTag("monsterCount").GetComponent<Text>();
+    }
 
     public void takeDamage(float damage)
     {
@@ -24,6 +31,11 @@ public class Health : MonoBehaviour
         {
             Instantiate(deathFX, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
+            MonsterCountKill();
         }
+    }
+    void MonsterCountKill(){ 
+        monsterKill = monsterKill+1;
+        countText.text = "Monstros mortos: " + monsterKill;
     }
 }
