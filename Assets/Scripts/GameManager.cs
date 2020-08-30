@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public int monsterKill = 0;
     public Text countText;
 
+    public List<GameObject> spawnerList;
+
     void Start()
     {
         countText = GameObject.FindGameObjectWithTag("monsterCount").GetComponent<Text>();
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
         this.monsterKill ++;
         countText.text = "Monstros mortos: " + monsterKill;
     }
+
+
 
 
 }

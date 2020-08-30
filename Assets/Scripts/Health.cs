@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
     
     private GameManager gameManager;
    
+    public GameObject monsterSpawner;
+
     public GameObject deathFX;
 
     void Start() {
@@ -29,20 +31,21 @@ public class Health : MonoBehaviour
         if (actualHealth <= 0)
         {
             Instantiate(deathFX, transform.position, Quaternion.identity);
-            gameObject.SetActive(false);
+            MonsterCountKill();
 
-                switch (this.tag)
-                {
-                    case "EnemyFire":
-                        gameManager.MonsterCountKill();
-                    break;    
-                    case "EnemyWater":
-                        gameManager.MonsterCountKill();
-                    break;    
-              
-                    default:
-                    break;
-                }
+            monsterSpawner.GetComponent<Pathfinding.MonsterSpawner>().createMonster();
+
+            Destroy(this.gameObject);
+        }
+    }
+
+    public void MonsterCountKill(){
+        switch (this.tag){
+            case "Player":
+            break;    
+            default:
+                gameManager.MonsterCountKill();
+            break;
         }
     }
 

@@ -14,11 +14,7 @@ public class MonsterSpawner : MonoBehaviour
         {
             originalPosition = transform.position;
             if(enableMonsterPatrol) StartCoroutine("MoveSpawnRandomly");
-
-            GameObject monsterInstance = Instantiate(monster, transform.position, Quaternion.identity);
-            EnemyNavigation enemyNavigation = monsterInstance.GetComponent<EnemyNavigation>();
-            enemyNavigation.spawnObject = this.gameObject;
-            enemyNavigation.playerObject = GameObject.FindGameObjectWithTag("Player");
+            createMonster();
         }
 
         private IEnumerator MoveSpawnRandomly()
@@ -30,5 +26,14 @@ public class MonsterSpawner : MonoBehaviour
                 );
             StartCoroutine("MoveSpawnRandomly");
         }
+
+        public void createMonster(){
+            GameObject monsterInstance = Instantiate(monster, transform.position, Quaternion.identity);
+            monsterInstance.GetComponent<Health>().monsterSpawner = this.gameObject;
+            EnemyNavigation enemyNavigation = monsterInstance.GetComponent<EnemyNavigation>();
+            enemyNavigation.spawnObject = this.gameObject;
+            enemyNavigation.playerObject = GameObject.FindGameObjectWithTag("Player");
+        }
+
     }
 }
