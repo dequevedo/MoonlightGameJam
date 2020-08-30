@@ -13,6 +13,7 @@ public class PointAndShoot : MonoBehaviour
 
     public GameObject weapon1;
     public GameObject weapon2;
+    public GameObject rune;
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class PointAndShoot : MonoBehaviour
 
     void fireBullet(Vector2 direction)
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        GameObject bullet = Instantiate(bulletPrefab, rune.transform.position, Quaternion.identity);
         bullet.transform.right = direction;
 
     }

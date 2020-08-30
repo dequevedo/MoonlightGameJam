@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 10;
     private Rigidbody2D rb;
+    public Animation walkAnimation;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
             0
         ).normalized * Time.deltaTime * speed;
 
+        
+        
         rb.MovePosition(transform.position + movement);
     } 
 }
