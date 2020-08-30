@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  walkAnimation: {fileID: 0}
 --- !u!50 &6976020474152537017
 Rigidbody2D:
   serializedVersion: 4
@@ -240,9 +241,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   bulletSpeed: 5
   target: {x: 0, y: 0, z: 0}
-  weapon1: {fileID: 0}
-  weapon2: {fileID: 0}
+  weapon1: {fileID: 3156375795978365802, guid: 8832279e573f57341a1378a9769f0afc, type: 3}
+  weapon2: {fileID: 5894878118130457937, guid: 6deaeda892be7c44e852e62a959938d7, type: 3}
   rune: {fileID: 2378663838462486891}
+  dashDistance: 12000
 --- !u!114 &8445960815708821070
 MonoBehaviour:
   m_ObjectHideFlags: 0
