@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
 
     void Update(){
         HealthUpdate();
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            canvasManager.commandsTips.SetActive(false);
+        }
     }
 
     private IEnumerator isGameOver()
@@ -41,10 +44,6 @@ public class GameManager : MonoBehaviour
     private IEnumerator commandsTipsDisplay()
     {
         yield return new WaitForSeconds(8f);
-        for(int i = 0; i < 800; i++){
-            yield return new WaitForSeconds(0.0025f);
-            canvasManager.commandsTips.transform.Translate(new Vector3(0,-0.7f,0)); //Mover a tela de dicas de comandos para baixo
-        }
         canvasManager.commandsTips.SetActive(false);
     }
 
