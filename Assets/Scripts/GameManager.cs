@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         if(player == null){
             canvasManager.gameOverObj.SetActive(true);
+            Cursor.visible = true;
             StopCoroutine("isGameOver");
         } else {
             StartCoroutine("isGameOver");
