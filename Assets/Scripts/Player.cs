@@ -9,9 +9,13 @@ public class Player : MonoBehaviour
     private Vector3 movement;
     private Rigidbody2D rb;
     public Animator anim;
+    public AudioSource audioSource;
+    public List<AudioClip> dashEffects;
+
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update(){
@@ -53,5 +57,7 @@ public class Player : MonoBehaviour
 
     void Dash(){
         rb.AddRelativeForce(movement * dashDistance);
+        audioSource.clip = dashEffects[Random.Range(0,dashEffects.Count)];
+        audioSource.Play();
     }
 }
